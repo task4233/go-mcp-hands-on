@@ -2,20 +2,19 @@
 
 ## MCPクライアントのセットアップ
 
-MCPサーバーを開発して動かすには、MCPクライアントが必要となりますので、何かしらのクライアントを事前にインストールおよび、起動しておいてください。
+MCPサーバーを開発して動かすには、MCPクライアントが必要となるため、何かしらのクライアントを事前にインストールしておいてください。
 
-基本的には、MCPサーバーとの連携がこなれている[Claude Desktop](https://claude.ai/download)をおすすめします。
-2025年4月時点で、筆者が最もよく使っているAIエージェントはClaude Desktopとなっています。
+現在、非常にハードルの低いMCPクライアントとしておすすめなのは、[VS Code (GitHub Copilot)](https://code.visualstudio.com/)です。
+Copilot FreeでもMCP Serverの登録が可能です。
+https://code.visualstudio.com/docs/copilot/chat/mcp-servers
 
-Claude DesktopにおけるMCPサーバーの設定は以下のリンクを参考に行えます。
+筆者自身が最もよく使っているAIエージェントは[Claude Desktop](https://claude.ai/download)です。
+独立したアプリケーションとして使えますし、MCPサーバーとの連携がこなれていて使いやすいのでおすすめです。
+
+MCPサーバーの設定は以下のリンクを参考に行えます。
 https://modelcontextprotocol.io/quickstart/user
 
-本ハンズオンではClaude Desktopの使用を前提としますが、以下のツールに関してはサポート可能です。
-
-### エディター系
-
-* [VS Code (GitHub Copilot)](https://code.visualstudio.com/)
-  - https://code.visualstudio.com/docs/copilot/chat/mcp-servers
+本ハンズオンではVS Code (GitHub Copilot)、あるいはClaude Desktopの使用を前提としますが、以下のツールに関してもサポート可能です。
 
 ### VS Code拡張系
 
