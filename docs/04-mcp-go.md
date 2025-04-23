@@ -69,7 +69,7 @@ VS Codeをご利用の場合は、以下の手順を実行します。
     "command": "go",
     "args": [
       "run",
-      "github.com/syumai/go-mcp-hands-on/examples/hello"
+      "github.com/syumai/go-mcp-hands-on/examples/hello@latest"
     ]
   }
 }
