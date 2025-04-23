@@ -65,8 +65,12 @@ VS Codeをご利用の場合は、以下の手順を実行します。
 ```json
 "servers": {
   "hello": {
+    "type": "stdio",
     "command": "go",
-    "args": ["run", "github.com/syumai/go-mcp-hands-on/examples/hello"]
+    "args": [
+      "run",
+      "github.com/syumai/go-mcp-hands-on/examples/hello"
+    ]
   }
 }
 ```
