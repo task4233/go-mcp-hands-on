@@ -1,24 +1,22 @@
-// https://github.com/mark3labs/mcp-go/blob/v0.23.1/README.md
 package main
 
 import (
 	"context"
 	"errors"
 	"fmt"
-	"log/slog"
 
 	"github.com/mark3labs/mcp-go/mcp"
 	"github.com/mark3labs/mcp-go/server"
 )
 
 func main() {
-	// Create MCP server
+	// MCPサーバーを作成
 	s := server.NewMCPServer(
 		"Demo 🚀",
 		"1.0.0",
 	)
 
-	// Add tool
+	// ツールを追加
 	tool := mcp.NewTool("hello_world",
 		mcp.WithDescription("Say hello to someone"),
 		mcp.WithString("name",
@@ -27,10 +25,10 @@ func main() {
 		),
 	)
 
-	// Add tool handler
+	// ツールハンドラーを追加
 	s.AddTool(tool, helloHandler)
 
-	// Start the stdio server
+	// Stdioサーバーを起動
 	if err := server.ServeStdio(s); err != nil {
 		fmt.Printf("Server error: %v\n", err)
 	}
@@ -41,8 +39,6 @@ func helloHandler(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallTo
 	if !ok {
 		return nil, errors.New("name must be a string")
 	}
-
-	slog.Info("Hello handler called", "name", name)
 
 	return mcp.NewToolResultText(fmt.Sprintf("Hello, %s!", name)), nil
 }
