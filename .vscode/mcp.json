@@ -1,0 +1,9 @@
+{
+    "servers": {
+        "caeser_solver": {
+            "type": "stdio",
+            "command": "ceaser-mcp",
+            "args": []
+        },
+    }
+}
