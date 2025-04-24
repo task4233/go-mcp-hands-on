@@ -7,9 +7,14 @@ import (
 	ceaserserver "github.com/syumai/go-mcp-hands-on/05/ceaser-mcp/server"
 )
 
+const (
+	version     = "1.0.0"
+	description = "Ceaser Cipher(06)"
+)
+
 func main() {
-	s := ceaserserver.New()
-	if err := server.ServeStdio(s); err != nil {
+	s := ceaserserver.New(version, description)
+	if err := server.ServeStdio(s.MCPServer); err != nil {
 		fmt.Printf("Server error: %v\n", err)
 	}
 }
