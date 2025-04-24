@@ -42,9 +42,18 @@ o4-miniやo3のような、回答にプログラムを使用する生成AIエー
 2. Lmdm dqrmofadqp ftq baxkyadbtuo uztqdufmzoq efdgofgdq rad nqffqd qzombegxmfuaz.
 3. Erltgwxk fxmbvnehnler wxunzzxw max kxvnklbox tezhkbmaf vtnlbgz lmtvd hoxkyehp xqvximbhgl.
 
-実装に使う `RotN` 関数は、 `05/ceaser-mcp/ceaser/ceaser.go` に実装されています。
+## 実装について
 
-### MCPサーバーの登録方法
+実装に使う `RotN` 関数は、 `05/ceaser-mcp/ceaser/ceaser.go` に実装されています。
+この関数を使って、`05/ceaser-mcp/server/server.go` を実装してください。
+
+ツールのパラメーターは、以下の2つです。
+
+* text: 文字列
+* shift: 数値
+  - デフォルト値: 13
+
+## MCPサーバーの登録方法
 
 VS Code (GitHub Copilot) をご利用の場合、以下の `${userHome}` のような事前定義変数を使って、ユーザーのホームディレクトリのパスを省略表記できます。ワークスペースのパスを利用する変数も存在します。
 
